@@ -66,3 +66,5 @@ Build the project and run with your desired argument:
 ```
 
 All three solutions produce identical results but with different performance characteristics depending on the input size and complexity.
+
+You can always add more test cases to TestCases.cs.
