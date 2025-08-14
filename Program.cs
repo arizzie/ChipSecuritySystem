@@ -8,6 +8,8 @@ namespace ChipSecuritySystem
 {
     class Program
     {
+        // Static list of chips to use for testing
+        // More test cases are in TestCases.cs
         static List<ColorChip> chips = new List<ColorChip>()
         {
             new ColorChip(Color.Red, Color.Blue),
@@ -72,14 +74,25 @@ namespace ChipSecuritySystem
 
         }
 
+        /// <summary>
+        /// Use DFSs to find the longest path but using a map to speed up lookups
+        /// </summary>
+        /// <param name="allChips">List of all available chips</param>
+        /// <param name="optimized">Whether to use optimized or unoptimized</param>
+        /// <param name="startColor">Start color</param>
+        /// <param name="endColor">End Color</param>
+        /// <returns>Longest path if it finds one</returns>
         static public List<int> FindLongestPath(List<ColorChip> allChips, bool optimized = true, Color startColor = Color.Blue, Color endColor = Color.Green)
         {
             if (allChips.Count == 0)
                 return new List<int>();
-
+            //keep track of visited notes
             HashSet<int> visited = new HashSet<int>();
+            //keep track of the longest path found
             List<int> longestPath = new List<int>();
+            //keep track of the current path
             Stack<int> path = new Stack<int>();
+            //map of colors to list of indexes of allChips that start with that color and a list of allChips that end with that color
             Dictionary<Color, Tuple<List<int>, List<int>>> colorMap = new Dictionary<Color, Tuple<List<int>, List<int>>>();
 
             //create a map of colors creating a list of indexes of allChips that start with that color and a list of allChips that end with that color

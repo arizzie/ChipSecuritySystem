@@ -166,7 +166,7 @@ namespace ChipSecuritySystem
 
         private static void LongChain()
         {
-            Console.WriteLine("\nTest Case 9: Long Chain");
+            Console.WriteLine("Test Case 9: Long Chain");
             Console.WriteLine("Expected: 6-chip solution");
 
             var chips = new List<ColorChip>()
@@ -211,41 +211,35 @@ namespace ChipSecuritySystem
 
         public static void PerformanceTest()
         {
-            Console.WriteLine("Test Case 12: Long 28-Chip Set (Performance Test)");
+            Console.WriteLine("Test Case 12: Long 22-Chip Set (Performance Test)");
             Console.WriteLine("Expected: Long path that takes time to compute");
             Console.WriteLine("This test is designed to demonstrate performance differences between solutions");
 
             var chips = new List<ColorChip>()
-            {
-                new ColorChip(Color.Blue, Color.Red),
-                new ColorChip(Color.Red, Color.Yellow),
-                new ColorChip(Color.Yellow, Color.Purple),
-                new ColorChip(Color.Purple, Color.Orange),
-                new ColorChip(Color.Orange, Color.Blue),
-                new ColorChip(Color.Blue, Color.Yellow),
-                new ColorChip(Color.Yellow, Color.Green),
-                new ColorChip(Color.Green, Color.Red),
-                new ColorChip(Color.Red, Color.Purple),
-                new ColorChip(Color.Purple, Color.Blue),
-                new ColorChip(Color.Blue, Color.Orange),
-                new ColorChip(Color.Orange, Color.Yellow),
-                new ColorChip(Color.Yellow, Color.Red),
-                new ColorChip(Color.Red, Color.Blue),
-                new ColorChip(Color.Blue, Color.Purple),
-                new ColorChip(Color.Purple, Color.Yellow),
-                new ColorChip(Color.Yellow, Color.Orange),
-                new ColorChip(Color.Orange, Color.Green),
-                new ColorChip(Color.Green, Color.Blue),
-                new ColorChip(Color.Blue, Color.Red),
-                new ColorChip(Color.Red, Color.Yellow),
-                new ColorChip(Color.Yellow, Color.Purple),
-                new ColorChip(Color.Purple, Color.Orange),
-                new ColorChip(Color.Orange, Color.Blue),
-                new ColorChip(Color.Blue, Color.Yellow),
-                new ColorChip(Color.Yellow, Color.Green),
-                new ColorChip(Color.Green, Color.Purple),
-                new ColorChip(Color.Purple, Color.Red)
-            };
+             {
+                 new ColorChip(Color.Blue, Color.Red),
+                 new ColorChip(Color.Red, Color.Yellow),
+                 new ColorChip(Color.Yellow, Color.Purple),
+                 new ColorChip(Color.Purple, Color.Orange),
+                 new ColorChip(Color.Orange, Color.Blue),
+                 new ColorChip(Color.Blue, Color.Yellow),
+                 new ColorChip(Color.Yellow, Color.Green),
+                 new ColorChip(Color.Green, Color.Red),
+                 new ColorChip(Color.Red, Color.Purple),
+                 new ColorChip(Color.Purple, Color.Blue),
+                 new ColorChip(Color.Blue, Color.Orange),
+                 new ColorChip(Color.Orange, Color.Yellow),
+                 new ColorChip(Color.Yellow, Color.Red),
+                 new ColorChip(Color.Red, Color.Blue),
+                 new ColorChip(Color.Blue, Color.Purple),
+                 new ColorChip(Color.Purple, Color.Yellow),
+                 new ColorChip(Color.Yellow, Color.Orange),
+                 new ColorChip(Color.Orange, Color.Green),
+                 new ColorChip(Color.Green, Color.Blue),
+                 new ColorChip(Color.Blue, Color.Red),
+                 new ColorChip(Color.Red, Color.Yellow),
+                 new ColorChip(Color.Yellow, Color.Purple)
+             };
 
             RunTest(chips, "Long Test Don't Care");
         }
@@ -329,7 +323,7 @@ namespace ChipSecuritySystem
             }
             else
             {
-                Console.WriteLine("✗ Solutions differ!");
+                Console.WriteLine("X Solutions differ!");
             }
 
             Console.WriteLine();

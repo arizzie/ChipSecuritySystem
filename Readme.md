@@ -1,6 +1,6 @@
 # Chip Security System 
 
-I wanted to showcase a bit of my work and then some optimization (even if very little) and then end it with a typical DFS solution without any fancy data structures, so I crafted 3 algorithms.
+I wanted to showcase a bit of my work and then some optimization (even if very little to help with better results) and then end it with a typical DFS solution without any fancy data structures, so I crafted 3 algorithms.
 
 Below is an explanation of how to run the program and command line arguments to run the different algorithms. 
 
