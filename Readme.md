@@ -1,12 +1,16 @@
 # Chip Security System 
 
-Find the longest path --
+I wanted to showcase a bit of my work and then some optimization (even if very little) and then end it with a typical DFS solution without any fancy data structures, so I crafted 3 algorithms.
+
+Below is an explanation of how to run the program and command line arguments to run the different algorithms. 
+
+Thank you for your consideration, I really had a lot fun with this excercise.
 
 ## Command Line Arguments
 
 The application supports several command line arguments:
 
-- `test` - Runs all test cases (fair warning there's a really long one at the end)
+- `test` - Runs all test cases (fair warning there's a really long one at the end). This compares all algorithms and shows timings and results.
 - `boring` - Runs the memory optimized version (DFS with lists and HashSet)
 - `faster` - Runs the optimized mapping algorithm
 - `slow` - Runs the unoptimized mapping algorithm
